@@ -62,12 +62,7 @@ function sqrt(){
 }
 
 function e(){
-    if(result.value===''){
-        result.value=Math.E;    
-    }
-    else{
-        result.value=Math.exp(parseFloat(result.value));
-    }
+    result.value=Math.exp(parseFloat(result.value));
 }
 
 function pow(){
