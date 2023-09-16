@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="btns">
+            <table>
+                <tr>
+                    <th colspan="6" class="display">
+                        <input id="result" type="text" placeholder="0" onkeydown="handleKeyPress(event)">
+                    </th>
+                </tr>
+                <tr>
+                    <td><button id="ce" onclick="backspace()">CE</button></td>
+                    <td><button onclick="fact()">x!</button></td>
+                    <td><button class="btn">(</button></td>
+                    <td><button class="btn">)</button></td>
+                    <td><button class="btn">%</button></td>
+                    <td><button id="ac" onclick="result.value=''">AC</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="sin()">sin</button></td>
+                    <td><button onclick="pi()">π</button></td>
+                    <td><button class="btn num">7</button></td>
+                    <td><button class="btn num">8</button></td>
+                    <td><button class="btn num">9</button></td>
+                    <td><button class="btn">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="cos()">cos</button></td>
+                    <td><button onclick="log()">log</button></td>
+                    <td><button class="btn num">4</button></td>
+                    <td><button class="btn num">5</button></td>
+                    <td><button class="btn num">6</button></td>
+                   <td><button class="btn">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="tan()">tan</button></td>
+                    <td><button onclick="sqrt()">√</button></td>
+                    <td><button class="btn num">1</button></td>
+                    <td><button class="btn num">2</button></td>
+                    <td><button class="btn num">3</button></td>
+                    <td><button class="btn">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="e()">e</button></td>
+                    <td><button onclick="pow()">x<sup>2</sup></button></td>
+                    <td><button class="btn num">.</button></td>
+                    <td><button class="btn num">0</button></td>
+                    <td><button id="eval" onclick="evaluateExpression()">=</button></td>
+                    <td><button class="btn">+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
